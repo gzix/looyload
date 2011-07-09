@@ -1,7 +1,7 @@
 
   var activeColor = "#fff";
   var disabledColor = "#999";
-  var defaultValue = "url ...";
+  var defaultValue = "ใส่ url ...";
   
   function loadBox() {
     var box = document.getElementById("url_entry");
