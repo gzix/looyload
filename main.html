@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="th"> 
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=480" /> 
+  <title>ลุยโลด!</title> 
+  <link rel="stylesheet" href="static/looyload.css" type="text/css" /> 
+  <script type="text/javascript" charset="utf-8" src="static/looyload.js"></script>
+</head> 
+<body>
+
+  <header>
+    <h1>What You Could Not See Is What You Should Read.</h1>
+  </header>
+  
+  <section class="content">
+
+    <div id="inputwrap">
+      <form action="" method="get" accept-charset="utf-8">
+        
+        <div class="input"><input onfocus="focusBox();" onblur="blurBox();" type="text" name="url" value="url ..." id="url_entry"/></div>
+        
+        <div class="button"><input id="go_button" type="submit" value="ลุยโลด!"/></div>
+        
+      </form>
+    </div>
+
+  </section>
+  
+  <footer>
+    
+    {% if secure_url %}
+    <p class="secure"> 
+      <em class="warning">คำแนะนำ:</em> <a href="{{secure_url}}">ใช้งานแบบ https ปลอดภัยกว่านะ</a>
+    </p>
+    {% endif %}
+    
+    <h3>หมายเหตุ:</h3>
+    <ol>
+      <li><p>ลองเช็ค IP Address เช่น dnsstuff.com หรือ checkip.org เป็นต้น</p></li>
+      <li><p>ยืม python scripts มาจาก <a href="http://mirrorrr.appspot.com/">Mirrorrr</a> ส่วนวิธีทำอ่านที่ <a href="http://www.labnol.org/internet/setup-proxy-server/12890/">labnol.org</a></p></li>
+    </ol>
+
+  </footer>
+
+</body>
+</html>
